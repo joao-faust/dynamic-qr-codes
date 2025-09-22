@@ -1,0 +1,29 @@
+services:
+  app:
+    container_name: qr-code-app
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+      args:
+        PUID: 1000
+        PGID: 1000
+    volumes:
+      - .:/app
+    ports:
+      - 8000:8000
+      - 5173:5173
+    env_file:
+      - .env
+
+  db:
+    container_name: qr-code-db
+    image: mysql:8.0.43
+    ports:
+      - 3307:3306
+    env_file:
+      - .db.env
+    volumes:
+      - db_data:/var/lib/mysql
+
+volumes:
+  db_data:

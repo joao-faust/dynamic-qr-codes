@@ -1,0 +1,199 @@
+{
+    "slogan": { "text": "Gerador de QR Codes dinâmicos" },
+
+    "auth": {
+        "user": {
+            "text": "Usuário",
+            "profile": { "text": "Perfil" },
+
+            "update": { "text": "Editar usuário" },
+
+            "signIn": { "text": "Entrar" },
+            "startSession": { "text": "Faça login para iniciar sua sessão" },
+            "logout": { "text": "Sair" }
+        },
+
+        "form": {
+            "fields": {
+                "email": { "text": "E-mail", "subText": "Digite o e-mail" },
+                "password": { "text": "Senha", "subText": "Informe a senha" },
+
+                "passwordConfirmation": {
+                    "text": "Confirmação de senha",
+                    "subText": "Informe a senha"
+                }
+            }
+        }
+    },
+
+    "qrCode": {
+        "text": "QR Code",
+        "plural": "QR Codes",
+
+        "create": { "text": "Criar QR Code" },
+        "update": { "text": "Editar QR Code" },
+
+        "accessPrivate": { "text": "Acessar QR Code privado" },
+
+        "editConfirmation": {
+            "text": "Você tem certeza de que deseja continuar? Se o conteúdo (texto, URL, e-mail...) for alterado, a quantidade de visitas será reiniciada."
+        },
+
+        "deleteConfirmation": {
+            "text": "Você tem certeza de que deseja deletar este QR Code?"
+        }
+    },
+
+    "destination": { "text": "Destino" },
+
+    "visit": { "plural": "Visitas" },
+
+    "form": {
+        "enterRequestedData": { "text": "Forneça os dados solicitados" },
+
+        "nonRequiredField": {
+            "text": "Deixe este campo vazio se não quiser alterá-lo."
+        },
+
+        "filter": { "text": "Filtro" },
+
+        "fields": {
+            "name": { "text": "Nome", "subText": "Informe o nome" },
+            "message": { "text": "Mensagem", "subText": "Informe a mensagem" },
+            "subject": { "text": "Assunto", "subText": "Informe o assunto" },
+            "body": { "text": "Corpo", "subText": "Informe o corpo" },
+
+            "errorCorrection": {
+                "text": "Nível de correção",
+
+                "options": {
+                    "L": { "text": "L - até 7% (Baixa)" },
+                    "M": { "text": "M - até 15% (Média)" },
+                    "Q": { "text": "Q - até 25% (Quartil)" },
+                    "H": { "text": "H - até 30% (Alta)" }
+                }
+            },
+
+            "contentType": {
+                "text": "Tipo de conteúdo",
+                "subText": "Informe o tipo de conteúdo"
+            },
+
+            "status": {
+                "text": "Status",
+
+                "options": {
+                    "all": { "plural": "Todos" },
+                    "enabled": { "text": "Habilitado" },
+                    "disabled": { "text": "Desabilitado" }
+                }
+            },
+
+            "visibility": {
+                "text": "Visibilidade",
+                "subText": { "text": "Informe a visibilidade" },
+
+                "options": {
+                    "all": { "plural": "Todos" },
+                    "public": { "text": "Público" },
+                    "private": { "text": "Privado" }
+                }
+            },
+
+            "type": {
+                "text": "Tipo",
+
+                "options": {
+                    "all": { "plural": "Todos" },
+                    "text": { "text": "Texto", "subText": "Informe o texto" },
+                    "url": { "text": "URL", "subText": "Informe a URL" },
+                    "email": { "text": "E-mail", "subText": "Informe o e-mail" },
+                    "phone": { "text": "Telefone", "subText": "Informe o telefone" },
+
+                    "whatsapp": {
+                        "text": "WhatsApp",
+                        "subText": "Informe o telefone"
+                    }
+                }
+            },
+
+            "value": { "text": "Valor" },
+            "image": { "text": "Imagem" },
+            "format": { "text": "Formato" },
+            "size": { "text": "Tamanho", "subText": "Informe o tamanho" },
+            "color": { "text": "Cor", "subText": "Informe a cor" },
+
+            "backgroundColor": {
+                "text": "Cor de fundo",
+                "subText": "Informe a cor de fundo"
+            }
+        }
+    },
+
+    "action": {
+        "text": "Ação",
+        "plural": "Ações",
+
+        "options": {
+            "create": { "text": "Criar" },
+            "update": { "text": "Editar" },
+            "delete": { "text": "Deletar" },
+            "download": { "text": "Baixar" },
+            "confirm": { "text": "Confirmar" },
+            "switch": { "text": "Alterar" },
+            "backup": { "text": "Backup" },
+            "uploadFile": { "text": "Enviar arquivo" },
+            "chooseFile": { "text": "Escolha um arquivo" },
+            "goToDestination": { "text": "Ir para o destino" },
+            "seeMore": { "text": "Ver mais" },
+            "switchVersion": { "text": "Alterar versão" },
+            "access": { "text": "Acessar" },
+            "execute": { "text": "Executar ação" }
+        }
+    },
+
+    "locale": {
+        "update": { "text": "Alterar localização" },
+
+        "options": {
+            "pt": { "text": "Português" },
+            "en": { "text": "Inglês" },
+            "es": { "text": "Espanhol" }
+        }
+    },
+
+    "meta": {
+        "current": { "text": "Atual" },
+        "version": { "text": "Versão" },
+        "currentVersion": { "text": "Versão atual" },
+        "lastVersion": { "text": "Última versão" },
+        "lastUpdate": { "text": "Última atualização" },
+        "total": { "text": "Total" },
+        "data": { "text": "Dados" },
+        "day": { "text": "Dia" },
+        "year": { "text": "Ano" },
+
+        "month": {
+            "text": "Mês",
+
+            "options": {
+                "january": { "text": "Janeiro" },
+                "february": { "text": "Fevereiro" },
+                "march": { "text": "Março" },
+                "april": { "text": "Abril" },
+                "may": { "text": "Maio" },
+                "june": { "text": "Junho" },
+                "july": { "text": "Julho" },
+                "august": { "text": "Agosto" },
+                "september": { "text": "Setembro" },
+                "october": { "text": "Outubro" },
+                "november": { "text": "Novembro" },
+                "december": { "text": "Dezembro" }
+            }
+        }
+    },
+
+    "footer": {
+        "text": "Trabalho de Conclusão de Curso (TCC) do curso de graduação em Sistemas para Internet."
+    }
+}

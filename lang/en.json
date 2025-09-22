@@ -1,0 +1,199 @@
+{
+    "slogan": { "text": "Dynamic QR Code Generator" },
+
+    "auth": {
+        "user": {
+            "text": "User",
+            "profile": { "text": "Profile" },
+
+            "update": { "text": "Update user" },
+
+            "signIn": { "text": "Sign In" },
+            "startSession": { "text": "Please log in to start your session" },
+            "logout": { "text": "Logout" }
+        },
+
+        "form": {
+            "fields": {
+                "email": { "text": "Email", "subText": "Enter your email" },
+                "password": { "text": "Password", "subText": "Enter your password" },
+
+                "passwordConfirmation": {
+                    "text": "Password Confirmation",
+                    "subText": "Enter your password"
+                }
+            }
+        }
+    },
+
+    "qrCode": {
+        "text": "QR Code",
+        "plural": "QR Codes",
+
+        "create": { "text": "Create QR Code" },
+        "update": { "text": "Update QR Code" },
+
+        "accessPrivate": { "text": "Access Private QR Code" },
+
+        "editConfirmation": {
+            "text": "Are you sure you want to continue? If the content (text, URL, email...) is changed, the visit count will be reset."
+        },
+
+        "deleteConfirmation": {
+            "text": "Are you sure you want to delete this QR Code?"
+        }
+    },
+
+    "destination": { "text": "Destination" },
+
+    "visit": { "plural": "Visits" },
+
+    "form": {
+        "enterRequestedData": { "text": "Provide the requested data" },
+
+        "nonRequiredField": {
+            "text": "Leave this field empty if you do not want to change it."
+        },
+
+        "filter": { "text": "Filter" },
+
+        "fields": {
+            "name": { "text": "Name", "subText": "Enter the name" },
+            "message": { "text": "Message", "subText": "Enter the message" },
+            "subject": { "text": "Assunto", "subText": "Enter the subject" },
+            "body": { "text": "Body", "subText": "Enter the body" },
+
+            "errorCorrection": {
+                "text": "Error correction level",
+
+                "options": {
+                    "L": { "text": "L - up to 7% (Low)" },
+                    "M": { "text": "M - up to 15% (Medium)" },
+                    "Q": { "text": "Q - up to 25% (Quartile)" },
+                    "H": { "text": "H - up to 30% (High)" }
+                }
+            },
+
+            "contentType": {
+                "text": "Content Type",
+                "subText": "Enter the content type"
+            },
+
+            "status": {
+                "text": "Status",
+
+                "options": {
+                    "all": { "plural": "All" },
+                    "enabled": { "text": "Enabled" },
+                    "disabled": { "text": "Disabled" }
+                }
+            },
+
+            "visibility": {
+                "text": "Visibility",
+                "subText": { "text": "Enter the visibility" },
+
+                "options": {
+                    "all": { "plural": "All" },
+                    "public": { "text": "Public" },
+                    "private": { "text": "Private" }
+                }
+            },
+
+            "type": {
+                "text": "Type",
+
+                "options": {
+                    "all": { "plural": "All" },
+                    "text": { "text": "Text", "subText": "Enter the text" },
+                    "url": { "text": "URL", "subText": "Enter the URL" },
+                    "email": { "text": "Email", "subText": "Enter the email" },
+                    "phone": { "text": "Phone", "subText": "Enter the phone number" },
+
+                    "whatsapp": {
+                        "text": "WhatsApp",
+                        "subText": "Enter the phone number"
+                    }
+                }
+            },
+
+            "value": { "text": "Value" },
+            "image": { "text": "Image" },
+            "format": { "text": "Format" },
+            "size": { "text": "Size", "subText": "Enter the size" },
+            "color": { "text": "Color", "subText": "Enter the color" },
+
+            "backgroundColor": {
+                "text": "Background Color",
+                "subText": "Enter the background color"
+            }
+        }
+    },
+
+    "action": {
+        "text": "Action",
+        "plural": "Actions",
+
+        "options": {
+            "create": { "text": "Create" },
+            "update": { "text": "Edit" },
+            "delete": { "text": "Delete" },
+            "download": { "text": "Download" },
+            "confirm": { "text": "Confirm" },
+            "switch": { "text": "Switch" },
+            "backup": { "text": "Backup" },
+            "uploadFile": { "text": "Upload File" },
+            "chooseFile": { "text": "Choose a File" },
+            "goToDestination": { "text": "Go to Destination" },
+            "seeMore": { "text": "See More" },
+            "switchVersion": { "text": "Switch Version" },
+            "access": { "text": "Access" },
+            "execute": { "text": "Execute Action" }
+        }
+    },
+
+    "locale": {
+        "update": { "text": "Change Locale" },
+
+        "options": {
+            "pt": { "text": "Portuguese" },
+            "en": { "text": "English" },
+            "es": { "text": "Spanish" }
+        }
+    },
+
+    "meta": {
+        "current": { "text": "Current" },
+        "version": { "text": "Version" },
+        "currentVersion": { "text": "Current Version" },
+        "lastVersion": { "text": "Last Version" },
+        "lastUpdate": { "text": "Last Update" },
+        "total": { "text": "Total" },
+        "data": { "text": "Data" },
+        "day": { "text": "Day" },
+        "year": { "text": "Year" },
+
+        "month": {
+            "text": "Month",
+
+            "options": {
+                "january": { "text": "January" },
+                "february": { "text": "February" },
+                "march": { "text": "March" },
+                "april": { "text": "April" },
+                "may": { "text": "May" },
+                "june": { "text": "June" },
+                "july": { "text": "July" },
+                "august": { "text": "August" },
+                "september": { "text": "September" },
+                "october": { "text": "October" },
+                "november": { "text": "November" },
+                "december": { "text": "December" }
+            }
+        }
+    },
+
+    "footer": {
+        "text": "Undergraduate Final Project (TCC) in Internet Systems."
+    }
+}

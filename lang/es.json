@@ -1,0 +1,211 @@
+{
+    "slogan": { "text": "Generador dinámico de QR Codes" },
+
+    "auth": {
+        "user": {
+            "text": "Usuario",
+            "profile": { "text": "Perfil" },
+
+            "update": { "text": "Editar usuario" },
+
+            "signIn": { "text": "Iniciar sesión" },
+            "startSession": { "text": "Inicie sesión para comenzar su sesión" },
+            "logout": { "text": "Cerrar sesión" }
+        },
+
+        "form": {
+            "fields": {
+                "email": {
+                    "text": "Correo electrónico",
+                    "subText": "Ingrese el correo electrónico"
+                },
+
+                "password": {
+                    "text": "Contraseña",
+                    "subText": "Ingrese la contraseña"
+                },
+
+                "passwordConfirmation": {
+                    "text": "Confirmación de contraseña",
+                    "subText": "Ingrese la contraseña"
+                }
+            }
+        }
+    },
+
+    "qrCode": {
+        "text": "QR Code",
+        "plural": "QR Codes",
+
+        "create": { "text": "Crear QR Code" },
+        "update": { "text": "Editar QR Code" },
+
+        "accessPrivate": { "text": "Acceder a QR Code privado" },
+
+        "editConfirmation": {
+            "text": "¿Está seguro de que desea continuar? Si el contenido (texto, URL, correo electrónico...) se modifica, el número de visitas se reiniciará."
+        },
+
+        "deleteConfirmation": {
+            "text": "¿Está seguro de que desea eliminar este QR Code?"
+        }
+    },
+
+    "destination": { "text": "Destino" },
+
+    "visit": { "plural": "Visitas" },
+
+    "form": {
+        "enterRequestedData": { "text": "Proporcione los datos solicitados" },
+
+        "nonRequiredField": {
+            "text": "Deje este campo vacío si no desea cambiarlo."
+        },
+
+        "filter": { "text": "Filtro" },
+
+        "fields": {
+            "name": { "text": "Nombre", "subText": "Ingrese el nombre" },
+            "message": { "text": "Mensaje", "subText": "Ingrese el mensaje" },
+            "subject": { "text": "Asunto", "subText": "Ingresse el asunto" },
+            "body": { "text": "Cuerpo", "subText": "Ingresse e Cuerpo" },
+
+            "errorCorrection": {
+                "text": "Nivel de corrección",
+
+                "options": {
+                    "L": { "text": "L - hasta 7% (Bajo)" },
+                    "M": { "text": "M - hasta 15% (Medio)" },
+                    "Q": { "text": "Q - hasta 25% (Cuartil)" },
+                    "H": { "text": "H - hasta 30% (Alto)" }
+                }
+            },
+
+            "contentType": {
+                "text": "Tipo de contenido",
+                "subText": "Ingrese el tipo de contenido"
+            },
+
+            "status": {
+                "text": "Estado",
+
+                "options": {
+                    "all": { "plural": "Todos" },
+                    "enabled": { "text": "Habilitado" },
+                    "disabled": { "text": "Deshabilitado" }
+                }
+            },
+
+            "visibility": {
+                "text": "Visibilidad",
+                "subText": { "text": "Ingrese la visibilidad" },
+
+                "options": {
+                    "all": { "plural": "Todos" },
+                    "public": { "text": "Público" },
+                    "private": { "text": "Privado" }
+                }
+            },
+
+            "type": {
+                "text": "Tipo",
+
+                "options": {
+                    "all": { "plural": "Todos" },
+                    "text": { "text": "Texto", "subText": "Ingrese el texto" },
+                    "url": { "text": "URL", "subText": "Ingrese la URL" },
+
+                    "email": {
+                        "text": "Correo electrónico",
+                        "subText": "Ingrese el correo electrónico"
+                    },
+
+                    "phone": { "text": "Teléfono", "subText": "Ingrese el teléfono" },
+
+                    "whatsapp": {
+                        "text": "WhatsApp",
+                        "subText": "Ingrese el teléfono"
+                    }
+                }
+            },
+
+            "value": { "text": "Valor" },
+            "image": { "text": "Imagen" },
+            "format": { "text": "Formato" },
+            "size": { "text": "Tamaño", "subText": "Ingrese el tamaño" },
+            "color": { "text": "Color", "subText": "Ingrese el color" },
+
+            "backgroundColor": {
+                "text": "Color de fondo",
+                "subText": "Ingrese el color de fondo"
+            }
+        }
+    },
+
+    "action": {
+        "text": "Acción",
+        "plural": "Acciones",
+
+        "options": {
+            "create": { "text": "Crear" },
+            "update": { "text": "Editar" },
+            "delete": { "text": "Eliminar" },
+            "download": { "text": "Descargar" },
+            "confirm": { "text": "Confirmar" },
+            "switch": { "text": "Cambiar" },
+            "backup": { "text": "Backup" },
+            "uploadFile": { "text": "Subir archivo" },
+            "chooseFile": { "text": "Elegir un archivo" },
+            "goToDestination": { "text": "Ir al destino" },
+            "seeMore": { "text": "Ver más" },
+            "switchVersion": { "text": "Cambiar versión" },
+            "access": { "text": "Acceder" },
+            "execute": { "text": "Ejecutar acción" }
+        }
+    },
+
+    "locale": {
+        "update": { "text": "Cambiar ubicación" },
+
+        "options": {
+            "pt": { "text": "Portugués" },
+            "en": { "text": "Inglés" },
+            "es": { "text": "Español" }
+        }
+    },
+
+    "meta": {
+        "current": { "text": "Actual" },
+        "version": { "text": "Versión" },
+        "currentVersion": { "text": "Versión actual" },
+        "lastVersion": { "text": "Última versión" },
+        "lastUpdate": { "text": "Última actualización" },
+        "total": { "text": "Total" },
+        "data": { "text": "Datos" },
+        "day": { "text": "Día" },
+        "year": { "text": "Año" },
+
+        "month": {
+            "text": "Mes",
+
+            "options": {
+                "january": { "text": "Enero" },
+                "february": { "text": "Febrero" },
+                "march": { "text": "Marzo" },
+                "april": { "text": "Abril" },
+                "may": { "text": "Mayo" },
+                "june": { "text": "Junio" },
+                "july": { "text": "Julio" },
+                "august": { "text": "Agosto" },
+                "september": { "text": "Septiembre" },
+                "october": { "text": "Octubre" },
+                "november": { "text": "Noviembre" },
+                "december": { "text": "Diciembre" }
+            }
+        }
+    },
+
+    "footer": {
+        "text": "Trabajo de Fin de Grado (TFC) en Sistemas para Internet."
+    }
+}

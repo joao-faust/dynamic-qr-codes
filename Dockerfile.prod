@@ -1,0 +1,53 @@
+FROM node:22.19.0-alpine AS node-builder
+WORKDIR /app/
+
+COPY package*.json vite.config.js /app/
+COPY resources /app/resources/
+
+RUN npm ci
+RUN npm run build
+
+
+FROM composer:2.7.1 AS composer-builder
+WORKDIR /app/
+
+COPY . /app/
+RUN composer install --optimize-autoloader --no-interaction --no-progress \
+    --ignore-platform-req=ext-gd
+
+
+FROM php:8.3.6-fpm-alpine
+WORKDIR /var/www/html/
+
+RUN apk add --no-cache \
+        bash \
+        sudo \
+        curl \
+        build-base \
+        autoconf \
+        oniguruma-dev \
+        libpng-dev \
+        imagemagick-dev \
+        imagemagick \
+        libstdc++ \
+    && pecl install imagick \
+    && docker-php-ext-configure gd \
+    && docker-php-ext-install -j$(nproc) gd pdo_mysql \
+    && docker-php-ext-enable imagick \
+    && apk del build-base autoconf oniguruma-dev libpng-dev imagemagick-dev
+
+COPY --from=composer-builder /app/vendor/ /var/www/html/vendor/
+
+COPY --from=node-builder /app/public/ /var/www/html/public/
+
+COPY . /var/www/html/
+
+RUN chown -R www-data:www-data /var/www/html/ \
+    && find /var/www/html/ -type d -exec chmod 755 {} \; \
+    && find /var/www/html/ -type f -exec chmod 644 {} \; \
+    && chmod -R 775 /var/www/html/storage/ /var/www/html/bootstrap/cache/ \
+    && chmod 600 /var/www/html/.env /var/www/html/.db.env
+
+EXPOSE 9000
+
+CMD ["php-fpm"]

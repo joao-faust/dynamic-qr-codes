@@ -1,0 +1,36 @@
+FROM php:8.3.6-fpm-alpine
+WORKDIR /app/
+
+ARG PUID=1000
+ARG PGID=1000
+
+RUN apk add --no-cache \
+        bash \
+        sudo \
+        curl \
+        build-base \
+        autoconf \
+        oniguruma-dev \
+        libpng-dev \
+        imagemagick-dev \
+        imagemagick \
+        libstdc++ \
+    && pecl install imagick \
+    && docker-php-ext-configure gd \
+    && docker-php-ext-install -j$(nproc) gd pdo_mysql \
+    && docker-php-ext-enable imagick \
+    && apk del build-base autoconf oniguruma-dev libpng-dev imagemagick-dev
+
+
+COPY --from=node:22.19.0-alpine /usr/local/ /usr/local/
+
+COPY --from=composer:2.7.1 /usr/bin/composer /usr/local/bin/composer
+
+COPY . /app/
+
+RUN addgroup -g ${PGID} appgroup \
+    && adduser -G appgroup -s /bin/sh -D -u ${PUID} appuser
+
+USER appuser
+
+EXPOSE 8000 5173
