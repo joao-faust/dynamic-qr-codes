@@ -1,6 +1,6 @@
 # Dynamic QR Codes
 
-🌐 [English](README.md) | [Português](README.pt.md) | [Español](README.es.md)
+🌐 [English](README.md) | [Portuguese](README.pt.md) | [Spanish](README.es.md)
 
 This is a **web application** developed as a TCC project to generate and manage **dynamic QR Codes**.
 
