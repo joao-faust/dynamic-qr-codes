@@ -12,8 +12,6 @@ services:
     ports:
       - 8000:8000
       - 5173:5173
-    env_file:
-      - .env
 
   db:
     container_name: qr-code-db
