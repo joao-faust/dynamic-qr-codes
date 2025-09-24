@@ -96,7 +96,7 @@ If something goes wrong during deployment, you can reset the containers and volu
 
 ```bash
 # In development mode
-docker compose -f docker-compose.prod.yaml down -v
+docker compose -f docker-compose.dev.yaml down -v
 # In production mode
 docker compose -f docker-compose.prod.yaml down -v
 ```
