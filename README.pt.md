@@ -12,7 +12,7 @@ O backend deste projeto foi desenvolvido usando **[Laravel](https://laravel.com/
 
 Para executar este projeto, você precisará ter o **Docker** e o **Docker Compose** instalados. É possível instalar cada tecnologia diretamente em sua máquina, mas o uso do Docker é altamente recomendado.
 
-Certifique-se de **remover o sufixo `.example`** dos arquivos de ambiente e atualizar a variável `APP_URL` com o endereço IPv4 da sua máquina.
+Certifique-se de **remover o sufixo `.example`** dos arquivos de ambiente (.env.example, .db.env.example).
 
 Antes de implantar a aplicação, clone este repositório executando:
 
@@ -27,6 +27,7 @@ git clone <repo_url>
 Atualize as seguintes variáveis de ambiente em seu arquivo `.env`:
 
 ```env
+APP_URL=http://YOUR_IPV4:8000
 APP_ENV=local
 APP_DEBUG=true
 ```
@@ -56,6 +57,7 @@ Agora você pode acessar a aplicação no seu navegador em **SEU\_IPV4:8000**.
 Atualize as seguintes variáveis de ambiente em seu arquivo `.env`:
 
 ```env
+APP_URL=http://YOUR_IPV4
 APP_ENV=production
 APP_DEBUG=false
 ```
@@ -74,4 +76,4 @@ php artisan optimize
 
 > Observação: Em alguns casos, pode ser necessário usar **docker-compose** em vez de **docker compose**.
 
-Agora você pode acessar a aplicação no seu navegador em **SEU\_IPV4:80**.
+Agora você pode acessar a aplicação no seu navegador em **SEU\_IPV4**.
