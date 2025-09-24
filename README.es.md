@@ -50,6 +50,11 @@ npm run dev
 
 Ahora puede acceder a la aplicación en su navegador en **SU\_IPV4:8000**.
 
+Credenciales de inicio de sesión predeterminadas:
+
+    Correo electrónico: super@admin.com
+    Contraseña: superadmin
+
 ---
 
 ## Ejecutando en Modo de Producción
@@ -77,3 +82,8 @@ php artisan optimize
 > Observación: En algunos casos, puede ser necesario usar **docker-compose** en lugar de **docker compose**.
 
 Ahora puede acceder a la aplicación en su navegador en **SU\_IPV4**.
+
+Credenciales de inicio de sesión predeterminadas:
+
+    Correo electrónico: super@admin.com
+    Contraseña: superadmin

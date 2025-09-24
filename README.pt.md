@@ -50,6 +50,11 @@ npm run dev
 
 Agora você pode acessar a aplicação no seu navegador em **SEU\_IPV4:8000**.
 
+Credenciais de login padrão:
+
+    Email: super@admin.com
+    Senha: superadmin
+
 ---
 
 ## Executando em Modo de Produção
@@ -77,3 +82,8 @@ php artisan optimize
 > Observação: Em alguns casos, pode ser necessário usar **docker-compose** em vez de **docker compose**.
 
 Agora você pode acessar a aplicação no seu navegador em **SEU\_IPV4**.
+
+Credenciais de login padrão:
+
+    Email: super@admin.com
+    Senha: superadmin
