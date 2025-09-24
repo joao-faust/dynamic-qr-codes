@@ -30,13 +30,14 @@ Atualize as seguintes variáveis de ambiente em seu arquivo `.env`:
 APP_URL=http://YOUR_IPV4:8000
 APP_ENV=local
 APP_DEBUG=true
+DB_HOST=qr-code-db-dev
 ```
 
 Execute o projeto com:
 
 ```bash
 docker compose  -f docker-compose.dev.yaml up -d --build
-docker exec -ti qr-code-app bash
+docker exec -ti qr-code-app-dev bash
 npm install
 composer install
 php artisan migrate
@@ -65,6 +66,7 @@ Atualize as seguintes variáveis de ambiente em seu arquivo `.env`:
 APP_URL=http://YOUR_IPV4
 APP_ENV=production
 APP_DEBUG=false
+DB_HOST=qr-code-db
 ```
 
 Execute o projeto com:

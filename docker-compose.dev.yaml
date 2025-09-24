@@ -1,6 +1,6 @@
 services:
   app:
-    container_name: qr-code-app
+    container_name: qr-code-app-dev
     build:
       context: .
       dockerfile: Dockerfile.dev
@@ -14,7 +14,7 @@ services:
       - 5173:5173
 
   db:
-    container_name: qr-code-db
+    container_name: qr-code-db-dev
     image: mysql:8.0.43
     ports:
       - 3307:3306
