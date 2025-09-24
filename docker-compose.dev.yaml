@@ -17,7 +17,7 @@ services:
     container_name: qr-code-db-dev
     image: mysql:8.0.43
     ports:
-      - 3307:3306
+      - 3308:3306
     env_file:
       - .db.env
     volumes:
