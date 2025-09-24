@@ -12,13 +12,13 @@ El backend de este proyecto fue desarrollado usando **[Laravel](https://laravel.
 
 Para ejecutar este proyecto, necesitará tener **Docker** y **Docker Compose** instalados. Es posible instalar cada tecnología directamente en su máquina, pero se recomienda encarecidamente usar Docker.
 
-Asegúrese de **eliminar el sufijo `.example`** de los archivos de entorno (.env.example, .db.env.example).
-
 Antes de desplegar la aplicación, clone este repositorio ejecutando:
 
 ```bash
 git clone <repo_url>
 ```
+
+Asegúrese de **eliminar el sufijo `.example`** de los archivos de entorno (.env.example, .db.env.example).
 
 ---
 

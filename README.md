@@ -12,13 +12,13 @@ The backend of this project was developed using **[Laravel](https://laravel.com/
 
 To run this project, you will need **Docker** and **Docker Compose** installed. You can install each technology directly on your machine, but using Docker is highly recommended.
 
-Ensure you have **removed the `.example` suffix** from the environment files (.env.example, .db.env.example).
-
 Before deploying the application, clone this repository by running:
 
 ```bash
 git clone <repo_url>
 ```
+
+Ensure you have **removed the `.example` suffix** from the environment files (.env.example, .db.env.example).
 
 ---
 
