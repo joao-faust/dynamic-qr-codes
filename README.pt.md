@@ -87,3 +87,18 @@ Credenciais de login padrão:
 
     Email: super@admin.com
     Senha: superadmin
+
+---
+
+## Solução de Problemas
+
+Se algo der errado durante a implantação, você pode reiniciar os containers e volumes com:
+
+```bash
+# No modo de desenvolvimento
+docker compose -f docker-compose.dev.yaml down -v
+# No modo de produção
+docker compose -f docker-compose.prod.yaml down -v
+```
+
+> Observação: Em alguns casos, pode ser necessário usar **docker-compose** em vez de **docker compose**.

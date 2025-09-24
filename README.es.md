@@ -87,3 +87,18 @@ Credenciales de inicio de sesión predeterminadas:
 
     Correo electrónico: super@admin.com
     Contraseña: superadmin
+
+---
+
+## Solución de Problemas
+
+Si algo sale mal durante la implementación, puede reiniciar los contenedores y volúmenes con:
+
+```bash
+# En modo desarrollo
+docker compose -f docker-compose.dev.yaml down -v
+# En modo producción
+docker compose -f docker-compose.prod.yaml down -v
+```
+
+> Observación: En algunos casos, puede ser necesario usar **docker-compose** en lugar de **docker compose**.

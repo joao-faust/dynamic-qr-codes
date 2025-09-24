@@ -87,3 +87,18 @@ Default login credentials:
 
     Email: super@admin.com
     Password: superadmin
+
+---
+
+## Troubleshooting
+
+If something goes wrong during deployment, you can reset the containers and volumes with:
+
+```bash
+# In development mode
+docker compose -f docker-compose.prod.yaml down -v
+# In production mode
+docker compose -f docker-compose.prod.yaml down -v
+```
+
+> Note: In some cases, you may need to use **docker-compose** instead of **docker compose**.
