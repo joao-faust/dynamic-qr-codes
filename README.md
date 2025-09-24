@@ -12,6 +12,8 @@ The backend of this project was developed using **[Laravel](https://laravel.com/
 
 To run this project, you will need **Docker** and **Docker Compose** installed. You can install each technology directly on your machine, but using Docker is highly recommended.
 
+Don’t forget to select the **private network** option when installing Docker on Windows.11
+
 Before deploying the application, clone this repository by running:
 
 ```bash
