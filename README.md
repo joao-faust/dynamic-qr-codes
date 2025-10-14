@@ -14,8 +14,6 @@ To run this project, you will need **Docker** and **Docker Compose** installed. 
 
 If you are using Windows, it is recommended to enable the integration between Docker and WSL. Otherwise, you may experience performance issues during container execution.
 
-Don’t forget to select the **private network** option when installing Docker on Windows.
-
 Before deploying the application, clone this repository by running:
 
 ```bash
@@ -100,13 +98,19 @@ Default login credentials:
 
 ## Troubleshooting
 
-If something goes wrong during deployment, you can reset the containers and volumes with:
+You might experience issues when trying to scan QR Codes from your phone.
+This could be caused by your firewall — try temporarily disabling it or creating an exception rule.
+
+If encounter another error or if the solution above doesn’t work — try stopping and rebuilding the containers:
 
 ```bash
 # In development mode
 docker compose -f docker-compose.dev.yaml down -v
+docker compose -f docker-compose.dev.yaml up -d --build
+
 # In production mode
 docker compose -f docker-compose.prod.yaml down -v
+docker compose -f docker-compose.prod.yaml up -d --build
 ```
 
 > Note: In some cases, you may need to use **docker-compose** instead of **docker compose**.

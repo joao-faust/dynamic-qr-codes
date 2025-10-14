@@ -14,8 +14,6 @@ Para ejecutar este proyecto, necesitará tener **Docker** y **Docker Compose** i
 
 Si estás usando Windows, se recomienda activar la integración entre Docker y WSL. De lo contrario, podrías experimentar problemas de rendimiento al ejecutar los contenedores.
 
-No olvides marcar la opción de **red privada** al instalar Docker en Windows.
-
 Antes de desplegar la aplicación, clone este repositorio ejecutando:
 
 ```bash
@@ -100,13 +98,19 @@ Credenciales de inicio de sesión predeterminadas:
 
 ## Solución de Problemas
 
-Si algo sale mal durante la implementación, puede reiniciar los contenedores y volúmenes con:
+Puedes experimentar problemas al intentar escanear QR Codes desde tu teléfono.
+Esto puede deberse a tu firewall — intenta desactivarlo temporalmente o crear una regla de excepción.
+
+Si encuentras otro error o si la solución anterior no funciona — intenta detener y reconstruir los contenedores:
 
 ```bash
 # En modo desarrollo
 docker compose -f docker-compose.dev.yaml down -v
+docker compose -f docker-compose.dev.yaml up -d --build
+
 # En modo producción
 docker compose -f docker-compose.prod.yaml down -v
+docker compose -f docker-compose.prod.yaml up -d --build
 ```
 
 > Observación: En algunos casos, puede ser necesario usar **docker-compose** en lugar de **docker compose**.
