@@ -22,7 +22,7 @@ Before deploying the application, clone this repository by running:
 git clone <repo_url>
 ```
 
-Ensure you have **removed the `.example` suffix** from the environment files (.env.example, .db.env.example). Also, make sure to update the server.hmr value in vite configuration file (vite.config.ts) to match your machine’s IPv4 host address.
+Ensure you have **removed the `.example` suffix** from the environment files (.env.example, .db.env.example). Also, make sure to update the server.hmr.host value in vite configuration file (vite.config.ts) to match your machine’s IPv4 host address.
 
 ---
 

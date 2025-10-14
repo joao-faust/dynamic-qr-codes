@@ -22,7 +22,7 @@ Antes de implantar a aplicação, clone este repositório executando:
 git clone <repo_url>
 ```
 
-Certifique-se de **remover o sufixo `.example`** dos arquivos de ambiente (.env.example, .db.env.example). Além disso, atualize o valor de server.hmr no arquivo de configuração do Vite (vite.config.ts) para corresponder ao endereço IPv4 da sua máquina host.
+Certifique-se de **remover o sufixo `.example`** dos arquivos de ambiente (.env.example, .db.env.example). Além disso, atualize o valor de server.hmr.host no arquivo de configuração do Vite (vite.config.ts) para corresponder ao endereço IPv4 da sua máquina host.
 
 ---
 
