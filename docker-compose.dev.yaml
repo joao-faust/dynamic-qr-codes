@@ -12,6 +12,8 @@ services:
     ports:
       - 8000:8000
       - 5173:5173
+    depends_on:
+      - db
 
   db:
     container_name: qr-code-db-dev
