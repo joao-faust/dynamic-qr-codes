@@ -12,6 +12,8 @@ El backend de este proyecto fue desarrollado usando **[Laravel](https://laravel.
 
 Para ejecutar este proyecto, necesitará tener **Docker** y **Docker Compose** instalados. Es posible instalar cada tecnología directamente en su máquina, pero se recomienda encarecidamente usar Docker.
 
+Si estás usando Windows, se recomienda activar la integración entre Docker y WSL. De lo contrario, podrías experimentar problemas de rendimiento al ejecutar los contenedores.
+
 No olvides marcar la opción de **red privada** al instalar Docker en Windows.
 
 Antes de desplegar la aplicación, clone este repositorio ejecutando:
@@ -20,7 +22,7 @@ Antes de desplegar la aplicación, clone este repositorio ejecutando:
 git clone <repo_url>
 ```
 
-Asegúrese de **eliminar el sufijo `.example`** de los archivos de entorno (.env.example, .db.env.example).
+Asegúrese de **eliminar el sufijo `.example`** de los archivos de entorno (.env.example, .db.env.example). Además, actualiza el valor de server.hmr en el archivo de configuración de Vite (vite.config.ts) para que coincida con la dirección IPv4 de tu máquina host.
 
 ---
 
