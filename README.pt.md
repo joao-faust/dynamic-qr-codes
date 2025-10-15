@@ -12,7 +12,7 @@ O backend deste projeto foi desenvolvido usando **[Laravel](https://laravel.com/
 
 Para executar este projeto, você precisará ter o **Docker** e o **Docker Compose** instalados. É possível instalar cada tecnologia diretamente em sua máquina, mas o uso do Docker é altamente recomendado.
 
-Se você estiver utilizando Windows, é recomendado ativar a integração entre o Docker e o WSL. Caso contrário, podem ocorrer problemas de desempenho durante a execução dos contêineres.
+Se você estiver usando Windows, é recomendável habilitar a integração entre o Docker e o WSL. Certifique-se de armazenar o código do seu projeto dentro da distribuição Linux instalada no WSL. Caso contrário, você pode enfrentar problemas de desempenho durante a execução dos contêineres.
 
 Antes de implantar a aplicação, clone este repositório executando:
 
